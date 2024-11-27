@@ -6,7 +6,12 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    "baseUrl": "src", // desde que carpeta leerá las importaciones
+    "paths": {
+      "@/components/*": ["components/*"], // que components o archivos dentro de este directorio leerá
+      "@/layouts/*": ["layouts/*"], // que components o archivos dentro de este directorio leerá
+      "@/views/*": ["views/*"], // que components o archivos dentro de este directorio leerá
+    },
     /* Bundler mode */
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
